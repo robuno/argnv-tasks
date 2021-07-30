@@ -1,0 +1,379 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#header-cont {
+    align-content: center;
+    margin-top: .6rem;
+    margin-bottom: .4rem;
+}
+
+.header-contact-top {
+    height: auto;
+}
+
+.header-contact-top .contact-group-all {
+    
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.2%;
+    
+}
+
+.header-contact-top .contact-group-top {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2.2rem;
+    color: black;
+    
+
+}
+
+.header-contact-top .contact-group-top p{
+    font-size: .9rem;
+    margin-top: -.5rem;
+    font-weight: 200;
+}
+
+.header-contact-top .contact-group-top h5{
+    font-weight: 500;
+}
+
+
+
+.header-contact-top .contact-group-top i {
+    color: #2c75d4;
+    font-size: 1.8rem;
+    margin-top: 0.6rem;
+    margin-right: -1.5rem;
+    
+}
+
+.header-contact-top img {
+
+    width: 16rem;
+/*    padding: 2%;*/
+}
+
+#right-nav-items li i{
+        color: white;
+}
+
+.logo1, .logo2 {
+    width:200px;
+}
+/*  nb */
+
+	
+.nbR {position: relative;}
+.nbR .navbar .logo2 {
+    display: none;
+}
+
+.nbF .navbar .logo2 {
+    display: block;
+    -webkit-filter: drop-shadow(3px 3px 3px #000);
+    filter:         drop-shadow(3px 3px 3px #000); 
+}
+
+.nbF .navbar #right-nav-items {
+    display: none;
+}
+.nbF {position: fixed; top: 0; z-index:100; width:100%;}
+
+.nbF .header-contact-top
+    {
+        visibility: hidden;
+        display: none;
+    }
+
+.nbF #navbarNav {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+
+@media  (max-width: 800px) {
+    .header-contact-top
+    {
+        visibility: hidden;
+        display: none;
+    }
+    
+    #right-nav-items li{
+        display: none;
+        visibility: hidden
+    }
+    
+    #nav-container-bottom img {
+    display: flex;
+    justify-content: flex-end;
+        
+    visibility: visible;
+    height: 40px;
+    margin-right: 54%;
+    -webkit-filter: drop-shadow(3px 3px 3px #000);
+    filter:         drop-shadow(3px 3px 3px #000); 
+    padding-left: 1rem;
+}
+    
+}
+
+@media all and (min-width: 992px) {
+	
+    .navbar .dropdown-menu-end{ right:0; left: auto;  color: #fff;}
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+ 
+}
+
+
+#nav-container-bottom {
+    margin: .2rem auto;
+    
+}
+
+
+nav {
+    background: linear-gradient(45deg, #051d71, #2081ff);
+}
+
+
+#navbarNav a {
+    background: inherit;
+    color:white;
+    font-weight: 600;
+    margin: 0 0.4rem;
+}
+#navbarNav a:hover, #right-nav-items li i:hover  {
+    color: lightgray;
+}
+
+#navbarNav .dropdown-menu a {
+    background: inherit;
+    color:black;
+    font-weight: 400;
+}
+
+#navbarNav .dropdown-menu a:hover, {
+    color:#2081ff;
+    transition-duration: 1s;
+}
+
+#search-icon i{
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    padding-right: 1.2rem;
+    margin-right: .4rem;
+    border-right: 1px inset #fff;
+}
+
+
+
+
+
+
+
+
+
+.container {
+    position: relative;
+    max-width:  1280px;
+    margin: 2% auto ;
+    /**height: 1600px; /** sil bunu **/
+}
+
+
+
+.myRightCtn {
+    position: relative;
+    background-image: linear-gradient(45deg, #051d71, #5a9bf0);
+    border-radius: 7px;
+    padding: 1rem;
+    color: darkgray;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.myRightCtn img {
+    
+    -webkit-filter: drop-shadow(5px 5px 5px #000);
+    filter:         drop-shadow(5px 5px 5px #000); 
+}
+
+.myLeftCtn {
+    position: relative;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.myLeftCtn header {
+    color: blueviolet;
+    font-size: 1.8rem;
+    font-weight: 700;
+/*    margin-bottom: 20px;*/
+}
+
+.row {
+    margin: 0px;
+}
+
+.row #right-welcome{
+/*    background-color: aqua;*/
+    height: inherit;
+}
+
+.row #right-welcome h3{
+    margin: 2rem 0 1rem 0 ;
+    color:blue;
+    font-size: 20px;
+    font-weight: 200;
+}
+.row #right-welcome header{
+    color:black;
+    font-size:44px;
+    font-weight: 700;
+}
+
+.row #last2rows .myLeftCtn {
+    width: auto;
+    margin: -10px -12px 0 -12px; 
+}
+
+.row #last2rows #explanation {
+    padding: 20px;
+    border: none;
+    background-color: rgb(246,247,249);
+    border-radius: 5px;
+}
+
+
+.row #last2rows .form-control {
+    padding 20px;
+    border: none;
+    background-color: rgb(252,252,255);
+    border-radius: 5px;
+}
+
+.row #last2rows .form-group {
+    padding: 20px;
+    border: none;
+    background-color: rgb(246,247,249);
+    border-radius: 5px;
+}
+
+.myCard {
+    position: relative;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.myRightCtn header {
+    color: #fff;
+    font-size: 35px;
+}
+
+.box {
+    position: relative;
+    padding: auto;
+    color:white;
+    padding: 1.2rem;
+}
+
+.box header {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.box h2{
+    margin-top: 50px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.contact-left-group {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.contact-left-group p {
+    color: white;
+    display: block;
+    font-size: 16px;
+}
+
+.contact-left-group h5 {
+    font: 10px;
+    color: white;
+    display: block;
+}
+
+.icon-grp {
+    text-align: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 1rem;
+}
+
+.contact-left-group i {
+    font-size:  1.2rem;
+    line-height: 3.2rem;
+    color: #051d71;
+}
+
+.myLeftCtn .myInput {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: rgb(246,247,249);
+    border-radius: 5px;
+    
+}
+
+
+.myLeftCtn .myInput:focus {
+    outline: none;
+    background-color: rgb(230,230,230);
+}
+
+.myForm {
+    position: relative;
+    margin-top: 20px;
+    margin-left:0;
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+}
+
+.myLeftCtn .btn-primary {
+    background: linear-gradient(45deg, #051d71, #5a9bf0);
+    color: #fff;
+    width: 11rem;
+    height: 4rem;
+    border:none;
+    border-radius: 6rem;
+    padding: 0.9rem;
+    font-weight: 600;
+}
+
+.myLeftCtn .btn-primary:hover {
+    background: linear-gradient(-45deg, #051d71, #5a9bf0);
+}
+
+
+
+
+
